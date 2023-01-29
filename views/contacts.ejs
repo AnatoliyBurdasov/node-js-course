@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("./partials/head.ejs")%>
+  <body>
+    <%- include("./partials/nav.ejs") %>
+    <h1>Contacts:</h1>
+    <ul>
+      <% if (contacts.length) {%> <% contacts.forEach(({name, age}) => { %>
+      <li
+        style="
+          margin: 10px;
+          padding: 5px;
+          text-align: center;
+          border: 1px solid black;
+        "
+      >
+        <span>Your name is <%= name %> Your age is <%= age %></span>
+      </li>
+      <% }) %> <% } %>
+    </ul>
+  </body>
+</html>
+<!-- В теге EJS я могу прописать любой js код. -->
+<!-- В теге <% const variable = "value" %>  может быть созданна переменная, функция или любая другая логика-->
+<!-- В теге  <%= variable %>  таким способом я обращаюсь к пространству имён шаблонизатора и вытягиваю значение переменной-->
+<!-- Для каждой операции в фигурных скобках добавляется вот такая обёртка <%%> из EJS  -->

@@ -1,0 +1,55 @@
+Arguments: 
+  /home/anatoliy/.nvm/versions/node/v19.4.0/bin/node /usr/share/yarn/bin/yarn.js add mangoose
+
+PATH: 
+  /home/anatoliy/.nvm/versions/node/v19.4.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  19.4.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/mangoose: Not found
+      at params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66988:18)
+      at self.callback (/usr/share/yarn/lib/cli.js:140749:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141721:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141643:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "nodejs-best",
+    "version": "1.0.0",
+    "description": "Best practice of Node JS ",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "nodemon server.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "nodemon": "^2.0.20"
+    },
+    "dependencies": {
+      "ejs": "^3.1.8",
+      "express": "^4.18.2",
+      "morgan": "^1.10.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
